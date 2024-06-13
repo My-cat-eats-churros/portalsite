@@ -18,7 +18,7 @@ app.use('/api/v1/user', userRouter);
 
 // Root Entry
 app.get('/', (req, res) => {
-  res.send('Welcome to Nodejs Authentication Tutorial');
+  res.send('환영합니다.');
 });
 
 // Listened to the PORT
