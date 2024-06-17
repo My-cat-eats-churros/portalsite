@@ -44,9 +44,7 @@ function App() {
           <div className="owner">
             대표 : 신명진 <span className="pipe" /> 전화번호 : 031.xxx.xxxx
           </div>
-          <div className="copyright">
-            © 2024 CHURURUP. All rights reserved.
-          </div>
+          <div className="copyright">© 2024 CHURURUP. All rights reserved.</div>
         </div>
       </footer>
     </Router>
@@ -54,4 +52,3 @@ function App() {
 }
 
 export default App;
-
