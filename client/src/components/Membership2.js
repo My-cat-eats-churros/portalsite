@@ -1,10 +1,11 @@
 import React, { useState } from 'react'; // useState를 React로부터 가져옵니다
 import './Membership2.css';
+import axios from 'axios';
 
 function Membership2() {
   const [isPetOwner, setIsPetOwner] = useState(true);
   const [petOwnerData, setPetOwnerData] = useState({
-    userId: '',
+    username: '',
     password: '',
     confirmPassword: '',
     name: '',
@@ -18,7 +19,7 @@ function Membership2() {
   });
 
   const [jobOwnerData, setJobOwnerData] = useState({
-    userId: '',
+    username: '',
     password: '',
     confirmPassword: '',
     name: '',
@@ -46,17 +47,45 @@ function Membership2() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (isPetOwner) {
-      console.log('반려인 회원가입 폼 제출합니다.', petOwnerData);
-    } else {
-      console.log('직종인 회원가입 폼 제출합니다.', jobOwnerData);
+    try {
+      const url = 'http://localhost:8000/api/v1/user/signup';
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      if (isPetOwner) {
+        console.log('반려인 회원가입 폼 제출합니다.', petOwnerData);
+        await axios.post(url, petOwnerData, config);
+      } else {
+        console.log('직종인 회원가입 폼 제출합니다.', jobOwnerData);
+        await axios.post(url, jobOwnerData, config);
+      }
+
+      alert('회원가입이 완료되었습니다!');
+    } catch (error) {
+      if (error.response) {
+        // 서버가 응답을 보낸 경우 (2xx 외의 상태 코드)
+        console.error('응답 에러:', error.response.data);
+        alert(`서버 오류: ${error.response.data.message || '알 수 없는 오류'}`);
+      } else if (error.request) {
+        // 요청이 전송되었지만 응답이 없는 경우
+        console.error('요청 에러:', error.request);
+        alert('서버로부터 응답이 없습니다. 서버 상태를 확인해주세요.');
+      } else {
+        // 요청 설정 중에 에러가 발생한 경우
+        console.error('설정 에러:', error.message);
+        alert(`설정 오류: ${error.message}`);
+      }
+      console.error('전체 에러:', error.config);
     }
   };
 
   const handleCancel = () => {
-    window.location.href = '/'; // 홈페이지 주소로 이동
+    window.location.href = '/mypage'; // 홈페이지 주소로 이동
   };
 
   return (
@@ -95,7 +124,7 @@ function Membership2() {
                 아이디
                 <input
                   type="text"
-                  name="userId"
+                  name="username"
                   value={petOwnerData.userId}
                   onChange={handlePetOwnerChange}
                   required
@@ -225,7 +254,7 @@ function Membership2() {
                 아이디
                 <input
                   type="text"
-                  name="userId"
+                  name="username"
                   value={jobOwnerData.userId}
                   onChange={handleJobOwnerChange}
                   required
