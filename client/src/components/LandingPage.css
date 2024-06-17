@@ -1,0 +1,84 @@
+/* 전체 레이아웃 */
+body {
+  margin: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px #563008;
+  border-radius: 8px;
+  margin: 0px auto;
+  width: 50% ;
+}
+
+/* 검색 폼 스타일링 */
+.inputForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inputForm input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  flex: 1;
+}
+
+.inputForm button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #f0ab0f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputForm button:hover {
+  background-color: #f0ab0f;
+}
+
+/* 지도 스타일링 */
+#myMap {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* 검색 결과 리스트 스타일링 */
+#result-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#result-list div {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#result-list h5 {
+  margin: 0 0 0.5rem 0;
+}

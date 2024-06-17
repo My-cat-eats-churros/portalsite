@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+  }
+  
+  .login-container a {
+    text-decoration: none;
+    color: #ff9900;
+  }
+  
+  .header-image {
+    height: 100px;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-contents p {
+    margin-right: 20px;
+  }
+  
+  .footer-contents a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #563008;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .pipe {
+    display: inline-block; /* Allow inline display */
+    vertical-align: middle; /* Vertically align with text */
+    margin: 0 5px; /* Add horizontal margin */
+    color: #563008; /* Set pipe color */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .header-image {
+    width: 102px;
+    height: 81px;
+  }
+
+      /*배너이미지*/
+      .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #563008;
+        color: #ff9900;
+        margin-bottom: 20px;
+      }
+      .banner img{
+        width: 15%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .banner h1{
+        font-size: 50px;
+        text-align: center;
+      }
