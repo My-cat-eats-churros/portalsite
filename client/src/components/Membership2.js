@@ -50,7 +50,7 @@ function Membership2() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = 'http://localhost:8000/api/v1/user/signup';
+      const url = 'https://portalsite.vercel.app/api/v1/user/signup';
       const config = {
         headers: {
           'Content-Type': 'application/json',
