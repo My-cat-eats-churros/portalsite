@@ -1,0 +1,311 @@
+/* 헤더 이미지 102*81*/
+.header-image {
+    width: 102px;
+    height: 81px;
+  }
+  
+  /*위에 뜨는 로그인*/
+  .login-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-container a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px  #F0AB0F;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .login-container a:hover {
+    background-color: #F0AB0F;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  /* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+  } */
+  /*이용약관 쮸고*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100wh - 70px);
+  }
+  .member-join-box{
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header h1{
+    font-size: 24px;
+    margin: 0;
+  }
+  .header{
+    font-size: 14px;
+    margin: #666;
+  }
+  .tiers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .tier{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #563008;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .tier.active{
+    background-color: #563008;
+    color: white;
+  }
+  main {
+    margin-top: 20px;
+  }
+  section{
+    margin-top: 20px;
+  }
+  section h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .terms-box, .privacy-box{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: white;
+  }
+  label{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  label input{
+    margin-right: 10px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .agree-btn, .cancel-btn{
+    padding-left: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .agree-btn{
+    background-color: #563008;
+    color: white;
+  }
+  .cancel-btn{
+    background-color: #d9d9d9;
+  }
+
+    /*반려인.직종인*/
+    .form-section h2{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .form-tabs {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    .form-tabs .tab .tab2{
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid black ;
+    }
+    .form-tabs .tab {
+      background-color: #F0AB0F;
+      color: white;
+    }
+    .form-tabs .tab2{
+      background-color: #563008;
+      color: white;
+    }
+    .petOwnerForm, .JobForm {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    /*반려인*/
+    .petOwnerForm label {
+      width: 100px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .petOwnerForm input[type="text"], .petOwnerForm input[type="password"], .petOwnerForm select{
+      flex: 1;
+      padding: 5px;
+    }
+    .petOwnerForm button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #563008;
+      color:white;
+      border: none;
+      cursor: pointer;
+    }
+    /*직종인*/
+    .JobForm input[type="radio"] {
+      margin-right: 5px;
+    }
+    .JobForm label {
+      width: 100px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .JobForm input[type="text"], .JobForm input[type="password"], .JobForm select{
+      flex: 1;
+      padding: 5px;
+    }
+    .JobForm button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #563008;
+      color:white;
+      border: none;
+      cursor: pointer;
+    }
+    .JobForm input[type="radio"] {
+      margin-right: 5px;
+    }
+    .petOwnerForm-btn, .JobForm-btn {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+  .complete-btn, .cancel2-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .complete-btn {
+    background-color: #563008;
+    color: white;
+  }
+  .cancel2-btn{
+    background-color: #d9d9d9;
+    color: #7b7b7b;
+  }
+  /*가입완료css*/
+  .button2{
+    flex: 1;
+    padding: 20px;
+  }
+  .button2 form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button2 label {
+    margin-top: 10px;
+  }
+  
+  .button2 input {
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .button2 button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #563008;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button2 button[type="button"] {
+    background-color: #563008;
+  }
+  .member_joinComplete{
+    border: 1px solid green;
+    padding: 30px 0;
+    line-height: 150%;
+    text-align: center;
+  }
+  .member_joinComplete .joinComplete{
+    width: 460px;
+    margin: 0 auto;
+  }
+  .joinComplete .desc {
+    margin: 0 0 30px;
+    font-size: 20px;
+    color: #008bcc;
+  font-weight: bold;
+  }
+  .member_joinComplete .joinComplete .memberInfo {
+    overflow:hidden; 
+    border:1px solid #d6d4d4; 
+    text-align:left;
+  }
+  .member_joinComplete .joinComplete .memberInfo .info{
+    padding:10px 0 10px 35px; 
+    border-bottom:1px solid #e8e7e7;
+    background:#fbfbfb url("http://img.echosting.cafe24.com/skin/base_ko_KR/member/ico_warning.gif") no-repeat 10px center;
+  }
+  .member_joinComplete .joinComplete .memberInfo .ul{
+    float:right; 
+    width:318px; 
+    padding:10px;
+  }
+  .member_joinComplete .joinComplete .memberInfo .thumb{
+    float:left; 
+    padding:10px;
+  }
+  .member_joinComplete .joinComplete .memberInfo .li{
+    margin:0 0 4px;
+  }
+  .member_joinComplete .joinComplete .memberInfo .li strong, .member_joinComplete .joinComplete .memberInfo .li span{
+    display:inline-block; 
+    display:inline; 
+    zoom:1; 
+    width:248px;
+  }
+  .member_joinComplete .joinComplete .memberInfo .li strong{
+    padding:0 0 0 10px;
+     width:60px;
+      color:#2e2e2e; 
+    font-weight:normal;
+     background:gray no-repeat 0 6px;
+  }
