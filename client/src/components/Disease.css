@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #563008;
+}
+
+.steps {
+  display: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.step {
+  width: 100%; /* 또는 필요에 따라 적절한 너비를 설정 */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  font-size: 30px;
+}
+
+
+
+.button-group {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-group button {
+  display: inline-block; /* inline-block으로 설정 */
+  background-color: #f0ab0f;
+  color: #fff;
+  border: none;
+  padding: 12px 20px; /* 예시로 padding 값을 수정함 */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+  font-size: 18px; /* 예시로 font-size 값을 수정함 */
+}
+
+
+.button-group button.selected {
+  background-color: #b37f05;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.complete-container {
+  display: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.complete-button {
+  background-color: #563008;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px; /* 예시로 font-size 값을 수정함 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.complete-button:hover {
+  background-color: #402407;
+}
+
+.disease {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.disease h6 {
+  font-size: 24px;
+  color: #563008;
+}
+
+.disease-info {
+  margin-top: 20px;
+}
+
+.disease-info p {
+  color: #333;
+}
+
+.disease-image {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
