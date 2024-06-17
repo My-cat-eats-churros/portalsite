@@ -16,8 +16,6 @@ app.use(express.json());
 var cors = require('cors');
 app.use(cors());
 
-app.use(express.json());
-
 // Import The User Route
 app.use('/api/v1/user', userRouter);
 

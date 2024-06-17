@@ -4,7 +4,16 @@ const User = require('../models/userModels');
 
 exports.signUp = async (req, res) => {
   try {
-    const { username, password, gender } = req.body;
+    const {
+      username,
+      password,
+      name,
+      birth,
+      gender,
+      email,
+      petGender,
+      petNumber,
+    } = req.body;
 
     // 입력 필드가 유효한지 확인하십시오.
     if (!username || !password) {
@@ -28,7 +37,12 @@ exports.signUp = async (req, res) => {
     const newUser = new User({
       username,
       password: hashedPassword,
+      name,
+      birth,
       gender,
+      email,
+      petGender,
+      petNumber,
     });
 
     await newUser.save();
