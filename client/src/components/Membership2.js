@@ -85,7 +85,7 @@ function Membership2() {
   };
 
   const handleCancel = () => {
-    window.location.href = '/mypage'; // 홈페이지 주소로 이동
+    window.location.href = '/'; // 홈페이지 주소로 이동
   };
 
   return (
@@ -348,18 +348,6 @@ function Membership2() {
           )}
         </section>
       </section>
-      <footer>
-        <div className="footer-contents">
-          <div className="footer-links">
-            <a href="#">개인정보처리방침</a>
-            <a href="#">이메일추출방지정책</a>
-          </div>
-          <div className="owner">
-            대표 : 신명진 <span className="pipe" /> 전화번호 : 031.xxx.xxxx
-          </div>
-          <div className="copyright">© 2024 CHURURUP. All rights reserved.</div>
-        </div>
-      </footer>
     </div>
   );
 }
